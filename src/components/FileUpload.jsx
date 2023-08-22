@@ -28,7 +28,7 @@ const FileUpload = () => {
           htmlFor="fileUpload"
           className=" w-1/5 cursor-pointer bg-white border-[1px] text-blue-500 text-sm py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white flex items-center"
         >
-          <img src={uploadImg} width={15} height={15} className="mr-2"></img> Add file
+          <img src={uploadImg} alt="upload image" width={15} height={15} className="mr-2"></img> Add file
         </label>
       </div>
     </div>

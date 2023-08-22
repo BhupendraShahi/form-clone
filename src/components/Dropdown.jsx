@@ -9,8 +9,8 @@ const Dropdown = () => {
       >
         Dropdown<span className="text-red-500 ml-1">*</span>
       </label>
-      <select id="dropdown" className="form-select w-1/3 border-[1px] p-3 rounded-md" required>
-        <option value="" disabled hidden>
+      <select id="dropdown" className="form-select w-1/3 border-[1px] p-4 rounded-md" required>
+        <option value="" hidden>
           Choose
         </option>
         <option value="option1">Option 1</option>

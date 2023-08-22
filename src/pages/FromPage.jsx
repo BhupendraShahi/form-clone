@@ -9,6 +9,7 @@ import TickBoxGrid from "../components/TickBoxGrid";
 import LinearScale from "../components/LinearScale";
 import Dropdown from "../components/Dropdown";
 import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
 
 const FromPage = () => {
   const navigate  = useNavigate();
@@ -23,26 +24,7 @@ const FromPage = () => {
 
   return (
     <div className="flex flex-col justify-center items-center mx-auto p-4 bg-blue-50">
-      <div className="max-w-2xl mb-4 bg-white shadow-md rounded-lg border border-t-violet-800 border-t-[10px]">
-        <h1 className="felx justify-start items-center text-3xl font-medium m-4 pl-2">
-          Assignment Task
-        </h1>
-        <hr />
-        <p className="font-bold text-base text-gray-600 pl-2 ml-4 mt-2 mb-4">
-          email@gmail.com{" "}
-          <a href="#" className="cursor-pointer text-blue-600 font-light">
-            Switch Account
-          </a>
-        </p>
-        <p className="text-gray-600 pl-2 mb-4 ml-4">
-          The name and photo associated with your Google account will be
-          recorded when you upload files and submit this form. Your email is not
-          part of your response.
-        </p>
-        <hr />
-        <p className="m-4 pl-2 text-red-500">* indicates required question</p>
-      </div>
-
+      <Header />
       <form className="w-full max-w-2xl" onSubmit={handleSubmit}>
         <MultipleChoiceQuestion />
         <CheckBox />
@@ -56,7 +38,7 @@ const FromPage = () => {
         <div className="flex justify-between w-full">
           <button
             type="submit"
-            className="bg-blue-800 text-white text-sm px-4 py-2 w-1/5 rounded"
+            className="bg-blue-800 text-white text-sm px-4 py-2 w-1/5 rounded hover:bg-blue-700"
           >
             Submit
           </button>

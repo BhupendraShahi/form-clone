@@ -50,7 +50,7 @@ const CheckboxQuestion = () => {
           <span>Option 3</span>
         </label>
       </div>
-    </div>
+    </div>  
   );
 };
 

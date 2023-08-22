@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 const MultiChoiceGrid = () => {
-  const rows = [
-    { label: "Row 1" },
-    { label: "Row 2" },
-    { label: "Row 3" },
-    // Add more rows as needed
-  ];
+  const rows = [{ label: "Row 1" }, { label: "Row 2" }, { label: "Row 3" }];
 
   const columns = ["Column 1", "Column 2", "Column 3"];
+
+  const [selectedOptions, setSelectedOptions] = useState({});
+
+  const handleRadioChange = (rowIndex, column) => {
+    setSelectedOptions((prevSelectedOptions) => ({
+      ...prevSelectedOptions,
+      [rowIndex]: column,
+    }));
+  };
 
   return (
     <div className="max-w-2xl mb-4 p-6 border rounded-lg shadow-md bg-white">
@@ -36,6 +40,8 @@ const MultiChoiceGrid = () => {
                   type="radio"
                   className="form-radio h-5 w-5"
                   name={`row-${rowIndex}`}
+                  checked={selectedOptions[rowIndex] === column}
+                  onChange={() => handleRadioChange(rowIndex, column)}
                 />
               </div>
             ))}

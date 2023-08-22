@@ -11,7 +11,7 @@ const MultipleChoiceQuestion = () => {
           <input
             type="radio"
             name="mcqOption"
-            className="form-radio text-blue-900 h-5 w-5"
+            className="text-blue-900 h-5 w-5"
             required
           />
           <span>Option 1</span>
@@ -20,7 +20,7 @@ const MultipleChoiceQuestion = () => {
           <input
             type="radio"
             name="mcqOption"
-            className="form-radio text-blue-900 h-5 w-5"
+            className="text-blue-900 h-5 w-5"
             required
           />
           <span>Option 2</span>

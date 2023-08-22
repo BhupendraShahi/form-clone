@@ -26,6 +26,7 @@ const LinearScale = () => {
               value={value}
               checked={selectedOption === value}
               onChange={() => handleRadioChange(value)}
+              required
             />
             <span>{value}</span>
           </label>

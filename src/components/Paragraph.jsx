@@ -11,9 +11,10 @@ const Paragraph = () => {
       </label>
       <textarea
         id="paragraph"
-        className="w-full border-b pb-1"
+        className="w-full border-b pb-1 focus:outline-none"
         placeholder="Your answer"
         rows="1"
+        required
       />
     </div>
   );

@@ -12,8 +12,9 @@ const ShortAnswer = () => {
       <input
         type="text"
         id="shortAnswer"
-        className="w-1/2 border-b pb-1 mt-4"
+        className="w-1/2 border-b pb-1 mt-4 focus:outline-none"
         placeholder="Your answer"
+        required
       />
     </div>
   );

@@ -13,12 +13,9 @@ import Header from "../components/Header";
 
 const FromPage = () => {
   const navigate  = useNavigate();
-
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormSubmitted(true);
     navigate("/submit");
   };
 
@@ -51,14 +48,6 @@ const FromPage = () => {
           </button>
         </div>
       </form>
-
-      {formSubmitted && (
-        <div className="p-4 bg-green-200 rounded-lg">
-          <p className="text-green-800 font-semibold">
-            Form submitted successfully!
-          </p>
-        </div>
-      )}
     </div>
   );
 };

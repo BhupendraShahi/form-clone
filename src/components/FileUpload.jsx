@@ -1,10 +1,9 @@
 import React from "react";
-import uploadImg from "../assets/upload.png"
+import uploadImg from "../assets/upload.png";
 
 const FileUpload = () => {
   const handleFileChange = (event) => {
     const selectedFile = event.target.files[0];
-    
   };
 
   return (
@@ -21,14 +20,20 @@ const FileUpload = () => {
           id="fileUpload"
           className="hidden"
           accept="image/*"
-          required
           onChange={handleFileChange}
         />
         <label
           htmlFor="fileUpload"
-          className=" w-1/5 cursor-pointer bg-white border-[1px] text-blue-500 text-sm py-2 px-4 rounded-md transition duration-300 ease-in-out hover:bg-blue-50 flex items-center"
+          className=" w-1/5 cursor-pointer bg-white border-[1px] text-blue-500 text-sm py-2 px-4 rounded-md transition duration-300 ease-in-out hover:bg-blue-50 flex items-center max-sm:w-2/5 max-sm:text-sm"
         >
-          <img src={uploadImg} alt="upload" width={15} height={15} className="mr-2"></img> Add file
+          <img
+            src={uploadImg}
+            alt="upload"
+            width={15}
+            height={15}
+            className="mr-2"
+          ></img>{" "}
+          Add file
         </label>
       </div>
     </div>

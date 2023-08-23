@@ -38,10 +38,11 @@ const MultiChoiceGrid = () => {
               <div key={columnIndex} className="w-1/3 flex justify-center">
                 <input
                   type="radio"
-                  className="form-radio h-5 w-5"
+                  className="h-5 w-5"
                   name={`row-${rowIndex}`}
                   checked={selectedOptions[rowIndex] === column}
                   onChange={() => handleRadioChange(rowIndex, column)}
+                  required
                 />
               </div>
             ))}
